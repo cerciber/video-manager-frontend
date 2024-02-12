@@ -1,0 +1,29 @@
+.progress-information {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .labels-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .progress-information__label {
+    margin-bottom: 5px;
+  }
+  
+  .progress-information__label:first-child {
+    align-self: flex-start;
+  }
+  
+  .progress-information__label:last-child {
+    align-self: flex-end;
+  }
+  
+  .progress-information__progressbar {
+    width: 100%;
+    margin-top: 10px;
+  }

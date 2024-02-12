@@ -8,12 +8,21 @@ import ProgressBar from './components/atoms/ProgressBar/ProgressBar';
 import Tabbed from './components/molecules/Tabbed/Tabbed';
 import Input from './components/molecules/Input/Input';
 import Button from './components/molecules/Button/Button';
+import ProgressInformation from './components/molecules/ProgressInformation/ProgressInformation';
 
 function App() {
   return (
     <main>
+      <br></br>
       <Card type={'default'}>
         <Label text={'Atoms!'} type={'default-bold'} />
+        <br></br>
+        <br></br>
+        <Label text={'Label!'} type={'default'} />
+        <br></br>
+        <Label text={'Text 1'} type={'default'} />
+        <br></br>
+        <Label text={'Text 2'} type={'default-bold'} />
         <br></br>
         <br></br>
         <Label text={'Icon!'} type={'default'} />
@@ -37,17 +46,18 @@ function App() {
           [
             {
               icon: FaHome,
-              label: "Pestaña 1",
-              content: <div>Contenido de la pestaña 1</div>
+              label: "Tab 1",
+              content: <div>Tab content 1</div>
             },
             {
               icon: FaHome,
-              label: "Pestaña 2",
-              content: <div>Contenido de la pestaña 2</div>
+              label: "Tab 2",
+              content: <div>Tab content 2</div>
             },
           ]
         } />
         <Label text={'Input!'} type={'default'} />
+        <br></br>
         <br></br>
         <Input icon={FaHome} placeholder={'Insert your text'} type={'default'} />
         <br></br>
@@ -59,6 +69,12 @@ function App() {
         <br></br>
         <br></br>
         <Button icon={FaHome} text={'Click here!'} type={'dark'} />
+        <br></br>
+        <br></br>
+        <Label text={'ProgressInformation!'} type={'default'} />
+        <br></br>
+        <br></br>
+        <ProgressInformation message={'Text'} currentValue={23.5} totalValue={100} unit={'GB'} type={'default'}></ProgressInformation>
       </Card>
     </main>
   );
