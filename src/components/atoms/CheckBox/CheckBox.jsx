@@ -3,10 +3,8 @@ import './CheckBox.css';
 
 function CheckBox({ type }) {
   return (
-    <div className={`checkbox checkbox--${type}`}>
-      <label>
+    <div type="checkbox" className={`checkbox checkbox--${type}`}>
         <input type="checkbox"/>
-      </label>
     </div>
   );
 }

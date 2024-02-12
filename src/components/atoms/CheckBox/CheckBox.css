@@ -1,7 +1,6 @@
-/* .checkbox {} */
-
-.checkbox label {
-    font-size: 20px;
+.checkbox {
+    display: inline;
+    margin-bottom: -5px;
 }
 
 .checkbox input {
@@ -10,7 +9,6 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    font: inherit;
     border: 2px solid var(--quinary-color);
 }
 

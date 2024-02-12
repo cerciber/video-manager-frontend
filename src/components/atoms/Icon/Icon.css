@@ -19,3 +19,9 @@
     color: var(--octonary-color);
 }
 
+.icon--table {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+}
+

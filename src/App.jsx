@@ -8,11 +8,14 @@ import ProgressBar from './components/atoms/ProgressBar/ProgressBar';
 import Tabbed from './components/molecules/Tabbed/Tabbed';
 import Input from './components/molecules/Input/Input';
 import Button from './components/molecules/Button/Button';
+import CheckBoxIconInformation from './components/molecules/CheckBoxIconInformation/CheckBoxIconInformation';
 import ProgressInformation from './components/molecules/ProgressInformation/ProgressInformation';
+import Table from './components/organisms/Table/Table';
 
 function App() {
   return (
     <main>
+      <br></br>
       <br></br>
       <Card type={'default'}>
         <Label text={'Atoms!'} type={'default-bold'} />
@@ -32,6 +35,7 @@ function App() {
         <Label text={'CheckBox!'} type={'default'} />
         <br></br>
         <CheckBox type={'default'}></CheckBox>
+        <br></br>
         <Label text={'ProgressBar!'} type={'default'} />
         <br></br>
         <ProgressBar percentage={50} type={'default'}></ProgressBar>
@@ -76,6 +80,24 @@ function App() {
         <br></br>
         <ProgressInformation message={'Text'} currentValue={23.5} totalValue={100} unit={'GB'} type={'default'}></ProgressInformation>
       </Card>
+      <br></br>
+      <Card type={'default'}>
+        <Label text={'Organisms!'} type={'default-bold'} />
+        <br></br>
+        <br></br>
+        <Label text={'Table!'} type={'default'} />
+        <br></br>
+        <Table headers={[
+            { field: 'checkbox', component: <CheckBoxIconInformation text={'Name'} type={'default-bold'}></CheckBoxIconInformation>, flexGrow: 3 },
+            { field: 'age', component: <Label text="Age" type={'default-bold'} />, center: true},
+            { field: 'email', component: <Label text="Email" type={'default-bold'} />, center: true},
+          ]} data={[
+            { checkbox: <CheckBoxIconInformation icon={FaHome} text={'Jhon'} type={'default'}></CheckBoxIconInformation> , name: <Label text='John Doe' />, age: <Label text='30' />, email: <Label text='john@example.com' /> },
+            { checkbox: <CheckBoxIconInformation icon={FaHome} text={'Jane'} type={'default'}></CheckBoxIconInformation> , name: <Label text='Jane Smith' />, age: <Label text='25' />, email: <Label text='jane@example.com' /> },
+          ]} />
+      </Card>
+      <br></br>
+      <br></br>
     </main>
   );
 }
