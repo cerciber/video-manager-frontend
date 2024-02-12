@@ -12,6 +12,7 @@ import CheckBoxIconInformation from './components/molecules/CheckBoxIconInformat
 import ProgressInformation from './components/molecules/ProgressInformation/ProgressInformation';
 import Table from './components/organisms/Table/Table';
 import PlusPlanBoard from './components/organisms/PlusPlanBoard/PlusPlanBoard';
+import MainTemplate from './components/templates/MainTemplate/MainTemplate';
 
 function App() {
   return (
@@ -103,6 +104,18 @@ function App() {
         <PlusPlanBoard type={'default'} ></PlusPlanBoard>
         <br></br>
       </Card>
+      <br></br>
+      <div>
+        <Label text={'Main Template!'} type={'default-bold'} />
+        <br></br>
+        <br></br>
+        <br></br>
+      </div>
+      <MainTemplate  leftContent={
+        <Label text="Left content" type={'default-bold'} />
+      } rightContent={
+        <Label text="Right content" type={'default-bold'} />
+      } type={'default'} ></MainTemplate>
     </main>
   );
 }

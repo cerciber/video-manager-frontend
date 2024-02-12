@@ -34,6 +34,10 @@
 .button--dark:hover {
     background-color: var(--nonary-color);
 }
+
+.button--dark-round:hover {
+    background-color: var(--nonary-color);
+}
   
 .button__text {
     margin-left: 10px; 
