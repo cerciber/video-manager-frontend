@@ -4,6 +4,11 @@
   --tertiary-color: #0e0909;
   --quaternary-color: #f4f4f4;
   --quinary-color: #dddddd;
+  --senary-color: #dedeff;
+  --septenary-color: #00000000;
+  --octonary-color: #00000000;
+  --nonary-color: #00000000;
+  --denary-color: #00000000;
 }
 
 body {
