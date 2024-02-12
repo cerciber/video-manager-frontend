@@ -18,6 +18,14 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+
+.button--dark-round {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    height: 30px;
+}
+  
   
 .button--light:hover {
     background-color: var(--octonary-color);
@@ -30,11 +38,9 @@
 .button__text {
     margin-left: 10px; 
 }
-  
-.button svg {
-    width: 20px;
-    height: 20px;
-    fill: #333;
+
+.button__text--noicon {
+    margin-left: 0px; 
 }
 
 .button--light svg {
@@ -42,5 +48,9 @@
 }
 
 .button--dark svg {
+    fill: var(--secondary-color);
+}
+
+.button--dark-round svg {
     fill: var(--secondary-color);
 }

@@ -5,8 +5,8 @@ import './Button.css';
 function Button({ icon, text, type }) {
   return (
     <button className={`button button--${type}`}>
-      <Icon icon={icon} type={'button'} />
-      <span className="button__text">{text}</span>
+      {icon && <Icon icon={icon} type={'button'} />}
+      <span className={`button__text ${!icon && 'button__text--noicon'}`}>{text}</span>
     </button>
   );
 }

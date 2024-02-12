@@ -5,5 +5,13 @@
 .card--default {
     padding: 20px;
     border-radius: 10px;
-    width: 600px;
+    width: calc(100% - 40px - 80px);
+    margin-bottom: 40px;
 }
+
+.card--board {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--quaternary-color);
+}
+

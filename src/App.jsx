@@ -11,6 +11,7 @@ import Button from './components/molecules/Button/Button';
 import CheckBoxIconInformation from './components/molecules/CheckBoxIconInformation/CheckBoxIconInformation';
 import ProgressInformation from './components/molecules/ProgressInformation/ProgressInformation';
 import Table from './components/organisms/Table/Table';
+import PlusPlanBoard from './components/organisms/PlusPlanBoard/PlusPlanBoard';
 
 function App() {
   return (
@@ -95,9 +96,13 @@ function App() {
             { checkbox: <CheckBoxIconInformation icon={FaHome} text={'Jhon'} type={'default'}></CheckBoxIconInformation> , name: <Label text='John Doe' />, age: <Label text='30' />, email: <Label text='john@example.com' /> },
             { checkbox: <CheckBoxIconInformation icon={FaHome} text={'Jane'} type={'default'}></CheckBoxIconInformation> , name: <Label text='Jane Smith' />, age: <Label text='25' />, email: <Label text='jane@example.com' /> },
           ]} />
+        <br></br>
+        <Label text={'PlusPlanBoard!'} type={'default'} />
+        <br></br>
+        <br></br>
+        <PlusPlanBoard type={'default'} ></PlusPlanBoard>
+        <br></br>
       </Card>
-      <br></br>
-      <br></br>
     </main>
   );
 }
