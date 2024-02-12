@@ -19,6 +19,14 @@
     color: var(--secondary-color);
 }
 
+.button--item {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+}
+
 .button--dark-round {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -38,9 +46,23 @@
 .button--dark-round:hover {
     background-color: var(--nonary-color);
 }
+
+.button--item:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.button--item:hover svg {
+    color: var(--secondary-color);
+}
   
 .button__text {
     margin-left: 10px; 
+}
+
+.button--item .button__text  {
+    margin-left: 20px; 
+    margin-top: 2px;
 }
 
 .button__text--noicon {

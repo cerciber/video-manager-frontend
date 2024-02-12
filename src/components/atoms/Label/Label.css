@@ -1,7 +1,10 @@
-/* .label {} */
-  
-.label--default {
+.label {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
+  
+/* .label--default {
+} */
 
 .label--default-bold {
     font-weight: bold;
@@ -9,4 +12,22 @@
 
 .label--default-italic {
     font-style: italic;
+}
+
+.label--short {
+    font-size: 12px;
+}
+
+.label--short-bold {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.label--short-italic {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.label--more-short {
+    font-size: 10px;
 }

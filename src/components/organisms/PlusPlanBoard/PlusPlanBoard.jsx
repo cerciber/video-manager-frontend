@@ -11,7 +11,7 @@ function PlusPlanBoard({ type }) {
         <Card type={'board'}>
             <Label text={'Mi plan - Plus'} type={'default-bold'} />
             <br></br>
-            <Label text={'El uso se renueva el: 3-may-23'} type={'default-italic'} />
+            <Label text={'El uso se renueva el: 3-may-23'} type={'short-italic'} />
             <br></br>
             <br></br>
             <ProgressInformation message={'Almacenamiento'} currentValue={23.5} totalValue={100} unit={'GB'} type={'default'}></ProgressInformation>

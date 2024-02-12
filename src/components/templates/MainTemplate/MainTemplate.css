@@ -3,4 +3,21 @@
     flex-direction: row; 
     width: 100%;
 }
-  
+
+.main-template__left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-template__left__space1 {
+    width: 100%;
+    height: 40px;
+}
+
+.main-template__left__space2 {
+    width: 100%;
+    height: 10px;
+}

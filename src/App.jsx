@@ -111,11 +111,9 @@ function App() {
         <br></br>
         <br></br>
       </div>
-      <MainTemplate  leftContent={
-        <Label text="Left content" type={'default-bold'} />
-      } rightContent={
-        <Label text="Right content" type={'default-bold'} />
-      } type={'default'} ></MainTemplate>
+      <MainTemplate type={'default'} >
+        <Label text="Content" type={'default-bold'} />
+      </MainTemplate>
     </main>
   );
 }
