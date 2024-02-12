@@ -1,0 +1,29 @@
+.input {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--septenary-color);
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: var(--tertiary-color);
+  height: 40px;
+}
+
+.input input::placeholder {
+  color: var(--septenary-color);
+}
+
+.input__separator {
+  border-left: 2px solid var(--septenary-color);
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

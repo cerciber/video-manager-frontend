@@ -5,9 +5,9 @@
   --quaternary-color: #f4f4f4;
   --quinary-color: #dddddd;
   --senary-color: #dedeff;
-  --septenary-color: #00000000;
-  --octonary-color: #00000000;
-  --nonary-color: #00000000;
+  --septenary-color: #d7d7d7;
+  --octonary-color: #b1b1b1;
+  --nonary-color: rgb(74, 90, 255);
   --denary-color: #00000000;
 }
 
@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;  
-  height: 100vh; 
   margin: 0px; 
   padding: 0px; 
   background-color: var(--quaternary-color);
