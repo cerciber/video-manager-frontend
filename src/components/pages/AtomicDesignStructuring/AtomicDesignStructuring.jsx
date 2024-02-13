@@ -17,9 +17,7 @@ import Back from '../../molecules/Back/Back';
 
 function AtomicDesignStructuring() {
   return (
-    <React.Fragment>
-        <br></br>
-      <br></br>
+    <Card type={'board'}>
       <Card type={'default'}>
         <Label text={'Atoms!'} type={'default-bold'} />
         <br></br>
@@ -110,16 +108,10 @@ function AtomicDesignStructuring() {
         <br></br>
       </Card>
       <br></br>
-      <div>
-        <Label text={'Main Template!'} type={'default-bold'} />
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
       <MainTemplate type={'default'} >
-        <Label text="Content" type={'default-bold'} />
+        <Label text="Main Template!" type={'default-bold'} />
       </MainTemplate>
-    </React.Fragment>
+    </Card>
   );
 }
 
