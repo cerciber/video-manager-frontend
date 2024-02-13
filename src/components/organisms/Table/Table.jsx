@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css';
 
-function Table({ headers, data }) {
+function Table({ headers, data, onClickRow }) {
   return (
     <div className="table">
       <div className="table__header">
@@ -17,7 +17,7 @@ function Table({ headers, data }) {
       </div>
       <div>
         {data.map((row, rowIndex) => (
-          <div key={rowIndex} className="table__row">
+          <div key={rowIndex} className="table__row" onClick={() => onClickRow && onClickRow(rowIndex)}>
             {headers.map((header, headerIndex) => (
               <div
                 key={headerIndex}

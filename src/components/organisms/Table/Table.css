@@ -21,6 +21,7 @@
 .table__row {
     display: flex;
     border-bottom: 2px solid var(--quaternary-color);
+    cursor: pointer;
 }
 
 .table__row:hover {

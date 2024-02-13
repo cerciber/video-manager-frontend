@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaViadeoSquare } from "react-icons/fa";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaRegFolder } from "react-icons/fa6";
 import { AiOutlinePlayCircle } from "react-icons/ai";
@@ -11,14 +11,20 @@ import Icon from '../../atoms/Icon/Icon';
 import Button from '../../molecules/Button/Button';
 import PlusPlanBoard from '../../organisms/PlusPlanBoard/PlusPlanBoard';
 import './MainTemplate.css';
-
 function MainTemplate({ children, type }) {
+
+  const [isClose, setIsClose] = useState(false);
+
+  const handleClick = () => {
+    setIsClose(!isClose);
+  };
+
   return (
     <div className={`main-template main-template--${type}`}>
-      <Card type={'left'}>
+      <Card type={isClose ? 'left-close' : 'left'}>
         <div className={`main-template__left`}>
           <div className='main-template__left__button'>
-            <Button icon={IoIosArrowBack} type={'transparent'} bold={true} />
+            <Button icon={isClose ? IoIosArrowForward : IoIosArrowBack} type={'transparent'} bold={true} onClick={handleClick} />
           </div>
           <Icon icon={FaViadeoSquare} type={'main-logo'} />
           <div className={`main-template__left__space1`}></div>
@@ -36,7 +42,7 @@ function MainTemplate({ children, type }) {
           <PlusPlanBoard type={'default'} ></PlusPlanBoard>
         </div>
       </Card>
-      <Card type={'right'}>{children}</Card>
+      <Card type={isClose ? 'right-close' : 'right'}>{children}</Card>
     </div>
   );
 }

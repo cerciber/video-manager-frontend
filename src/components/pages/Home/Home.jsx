@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaHome } from 'react-icons/fa';
 import { VscLibrary } from "react-icons/vsc";
 import { BsTrash3 } from "react-icons/bs";
 import { FaRegFolder } from "react-icons/fa6";
@@ -11,12 +10,18 @@ import Input from '../../molecules/Input/Input';
 import Button from '../../molecules/Button/Button';
 import CheckBoxIconInformation from '../../molecules/CheckBoxIconInformation/CheckBoxIconInformation';
 import Table from '../../organisms/Table/Table';
-import MainTemplate from '../../templates/MainTemplate/MainTemplate';
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleRowClick = () => {
+    navigate('/folder-description');
+  };
+
   return (
-    <MainTemplate type={'default'} >
       <div className='home__container'>
         <div className='home__layer'>
           <Tabbed tabs={
@@ -45,7 +50,7 @@ function Home() {
                     { name: <CheckBoxIconInformation icon={FaRegFolder} text={'Comizzión'} type={'default'}></CheckBoxIconInformation> , videos: <Label text='2' />, size: <Label text='284 MB' />, lastModification: <Label text='30/may/2023' /> },
                     { name: <CheckBoxIconInformation icon={FaRegFolder} text={'Creador de contenido'} type={'default'}></CheckBoxIconInformation> , videos: <Label text='8' />, size: <Label text='4.3 GB' />, lastModification: <Label text='30/may/2023' /> },
                     { name: <CheckBoxIconInformation icon={FaRegFolder} text={'Exportados Wil'} type={'default'}></CheckBoxIconInformation> , videos: <Label text='14' />, size: <Label text='500 MB' />, lastModification: <Label text='30/may/2023' /> },
-                  ]} />
+                  ]} onClickRow={handleRowClick} />
                 </div>
               },
               {
@@ -63,8 +68,6 @@ function Home() {
           </div>
         </div>
       </div>
-        
-    </MainTemplate>
   );
 }
 

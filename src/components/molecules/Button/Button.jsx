@@ -3,9 +3,9 @@ import Icon from '../../atoms/Icon/Icon';
 import Label from '../../atoms/Label/Label';
 import './Button.css';
 
-function Button({ icon, text, type, bold }) {
+function Button({ icon, text, type, bold, onClick }) {
   return (
-    <button className={`button button--${type}`}>
+    <button className={`button button--${type}`} onClick={onClick}>
       {icon && <Icon icon={icon} type={type === 'item' ? 'item' : (type === 'transparent' ? 'item' : 'button')} />}
       {text && <span className={`button__text ${!icon && 'button__text--noicon'}`}>{
         <Label text={text} type={bold ? (type === 'dark-round' ? 'short-bold' : 'default-bold') : (type === 'dark-round' ? 'short' : 'default')} />
