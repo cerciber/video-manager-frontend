@@ -34,12 +34,28 @@
     height: 30px;
 }
   
+.button--transparent {
+    background-color: transparent;
+    color: var(--tertiary-color);
+    height: 30px;
+}
+
+.button--back {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    height: 35px;
+}
   
 .button--light:hover {
     background-color: var(--octonary-color);
 }
 
 .button--dark:hover {
+    background-color: var(--nonary-color);
+}
+
+.button--back:hover {
     background-color: var(--nonary-color);
 }
 
@@ -78,5 +94,9 @@
 }
 
 .button--dark-round svg {
+    fill: var(--secondary-color);
+}
+
+.button--back svg {
     fill: var(--secondary-color);
 }

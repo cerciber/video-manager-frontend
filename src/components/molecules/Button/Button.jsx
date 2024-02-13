@@ -6,10 +6,10 @@ import './Button.css';
 function Button({ icon, text, type, bold }) {
   return (
     <button className={`button button--${type}`}>
-      {icon && <Icon icon={icon} type={type === 'item' ? 'item' : 'button'} />}
-      <span className={`button__text ${!icon && 'button__text--noicon'}`}>{
+      {icon && <Icon icon={icon} type={type === 'item' ? 'item' : (type === 'transparent' ? 'item' : 'button')} />}
+      {text && <span className={`button__text ${!icon && 'button__text--noicon'}`}>{
         <Label text={text} type={bold ? (type === 'dark-round' ? 'short-bold' : 'default-bold') : (type === 'dark-round' ? 'short' : 'default')} />
-      }</span>
+      }</span>}
     </button>
   );
 }

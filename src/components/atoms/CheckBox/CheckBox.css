@@ -7,9 +7,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border: 2px solid var(--quinary-color);
+    cursor: pointer;
 }
 
 .checkbox input[type=checkbox] {
@@ -19,7 +20,7 @@
 .checkbox input:checked {
     border-color: transparent;
     background: var(--primary-color) border-box;
-    box-shadow: 0 0 0 4px inset var(--secondary-color);
+    box-shadow: 0 0 0 2px inset var(--secondary-color);
 }
 
 .checkbox input:not(:checked):hover {

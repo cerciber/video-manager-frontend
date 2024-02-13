@@ -6,6 +6,8 @@
   border-radius: 7px;
   padding-left: 10px;
   padding-right: 10px;
+  width: 30%;
+  min-width: 200px;
 }
 
 .input input {
@@ -15,6 +17,8 @@
   width: 100%;
   color: var(--tertiary-color);
   height: 40px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input input::placeholder {
